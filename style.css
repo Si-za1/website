@@ -135,15 +135,19 @@ top: 405px;
 .search {
   position: absolute;
   top: 70%;
-  left: 25%;
+  left: 21%;
   transform: translate(-50%, -50%);
-
 }
 
+.search-container{
+  display: flex;
+  align-items: center;
+}
 .search input[type="text"] {
     width: 400px;
-    height: 40px;
-    padding: 10px 40px 10px 20px;
+    height: 39px;
+    margin:-8px;
+    padding: 2px 5px 0.5px;
     border-radius: 20px;
     background: url('https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_search_48px-512.png') no-repeat 375px center;
     background-size: 18px 18px;
@@ -153,27 +157,22 @@ top: 405px;
 }
 
 
-.search-container button[type="submit"] {
+.search button[type="submit"] {
   width: 100px;
   height: 40px;
+  padding: 10px 10px 8px 20px;
+  margin:-8px;
   background-color: #1BC768;
   color: #fff;
   border: none;
   border-top-right-radius: 26px;
   border-bottom-right-radius: 26px;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .search-container input[type="text"]::placeholder {
-  width: 400px;
-  height: 40px;
-  padding: 20px;
-  border-top-left-radius: 26px;
-  border-bottom-left-radius: 26px;
-  border-top-right-radius: 26px;
-  border-bottom-right-radius: 26px;
   transition: all 0.3s ease;
 }
 
